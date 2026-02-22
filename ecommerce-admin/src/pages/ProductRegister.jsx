@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import "./ProductRegister.css";
-import NoticeWrite from "../components/NoticeWrite";
+import Editor from "../components/Editor";
 import { CameraIcon, CloseIcon } from "../components/CustomTag";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -189,7 +189,26 @@ const ProductRegister = () => {
                 </Box>
             ))}
 
-            <NoticeWrite />
+            <>
+                <div className="editor-container">
+                    <div className="editor-wrapper">
+                        {/* 제목 입력창 */}
+                        <input
+                            className="editor-title-input"
+                            placeholder="제목을 입력해주세요"
+                        />
+
+                        {/* 에디터 */}
+                        <Editor />
+
+                        {/* 버튼 영역 */}
+                        <div className="editor-actions">
+                            <button className="btn cancel">취소</button>
+                            <button className="btn submit">등록</button>
+                        </div>
+                    </div>
+                </div>
+            </>
         </div>
     );
 };

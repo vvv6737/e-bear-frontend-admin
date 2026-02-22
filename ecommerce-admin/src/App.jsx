@@ -67,8 +67,8 @@ function App() {
             <Route path="/notice" element={<NoticePage />} />
             <Route path="/notice/view/:id" element={<NoticeDetail />} />
             <Route path="/notice/write" element={<NoticeWritePage />} />
-            <Route path="/proudct" element={<ProductList />} />
-            <Route path="/proudct/write" element={<ProductRegister />} />
+            <Route path="/product" element={<ProductList />} />
+            <Route path="/product/write" element={<ProductRegister />} />
             <Route path="/member" element={<MemberList />} />
             <Route path="/order" element={<OrderListPage />} />
             <Route path="/inquiry" element={<CustomerInquiryListPage />} />
